@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="BankersAlgorithm.js"></script>
+        <link rel="stylesheet" href="BankersAlgorithm.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="heading row">
+                <div class="center col-md-6 col-sm-6">
+                    <h1>Bankers Algorithm</h1>
+                </div>
+            </div>
+        </div>
+        
+        <section class="section">
+            
+       
+            
+            <ul class="menu-list">
+                <li>
+                    <p class="">Number of process: 5
+                        <small id="p"></small>
+                    </p>
+                    <p class="">Number of resourses: 4
+                        <small id="r"></small>
+                    </p>
+                </li>
+                <li>
+                    <p>The claim vector is: </p>
+                    <p id="max_res"></p>
+                </li>
+                <li>
+                    <p>The Allocated Resource Table is: </p>
+                    <p id="curr"></p>
+                </li>
+                <li>
+                    <p>The maximum claim table: </p>
+                    <p id="max_claim"></p>
+                </li>
+                <li>
+                    <p>Allocated resources:</p>
+                    <p id="alloc"></p>
+                </li>
+                <li>
+                    <p>Available resources:</p>
+                    <p id="avl"></p>
+                </li>
+            </ul>
+            <p class="menu-label has-text-info">
+                Outputs
+            </p>
+            <ul class="menu-list">
+                <li>Process Execution: 
+                    <p id="exec"></p>
+                </li>
+                <li>
+                    <p id="safe"></p>
+                </li>
+            </ul>
+            
+        </section>
+
+        
+            
+            
+        <div id="start" class="start">
+            
+            <button id="strbtn" onclick="start()">START</button>
+            
+            <button onclick="window.location.reload()" class="reset" id="reset">RESET</button>
+            <a href="../homepage.html"><button id="home">HOME</button></a>
+        </div>
+
+        <script>
+            var firstTime = true;
+            var start = function () {
+                if (firstTime) {
+                    firstTime = false;
+                    main();
+                }
+            }	
+        </script>
+    </body>
+</html>
