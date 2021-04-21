@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    background-color: rgb(39, 46, 46);
+    background-color: blueviolet;
 }
 img
 {
@@ -10,7 +10,7 @@ img
 .heading{
     height: 170px;
     position: relative;
-    background-color: #aa1446;
+    background-color: blueviolet;
     box-shadow: 3px #000000;
 
 }
@@ -67,7 +67,7 @@ img
 @keyframes slidein{
     from{
         margin-left: 40px;
-        background-color: #aa1446;
+        background-color: blueviolet;
     }
     31.66%{
         background-color:  cornflowerblue;
@@ -183,7 +183,7 @@ button
     cursor: pointer;
     outline: none;
     color: #fff;
-    background-color: #aa1446;
+    background-color: blueviolet;
     border: none;
     border-radius: 10px;
     /* box-shadow: 0 9px #999; */

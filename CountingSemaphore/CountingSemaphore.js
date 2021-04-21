@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', ()=>
 {
     let stage = document.querySelector('#stage')
-    var n = prompt("Counting Semaphore\nEnter number of processes(5-10)");
+    var n = prompt("Counting Semaphore\nEnter number of processes");
     for(let i = 0; i < n ;i++)
     {
         let process = document.createElement('div')

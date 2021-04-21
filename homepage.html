@@ -1,61 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="homepage.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@400;700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="homepage.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <title>Deadlock and Concurrancy Algorithms</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <!-- <div class="heading row"> -->
-            <!-- <div class="center col-md-6 col-sm-6"> -->
-                <h1 class="display-4" >Deadlock And Concurrency Algorithms</h1>
-            <!-- </div> -->
-        <!-- </div> -->
+      <h1 class="display-4">Deadlock And Concurrency Algorithms</h1>
     </div>
-    <!-- <div class="container" > -->
-            <!-- <div class="col-md-4 col-sm-6 display_in"> -->
-                <div class="serviceBox">
-                    <h3 class="title">Counting Semaphore</h3>
-                    <p class="description">
-                        Conceptually, a semaphore is a nonnegative integer count.
-                        Semaphores are typically used to coordinate access to resources, with the semaphore count initialized to the number of free resources.
-                        By default, there is no defined order of unblocking if multiple threads are waiting for a semaphore
-                    </p>
-                    <a href="CountingSemaphore/CountingSemaphore.html" class="btn btn-primary btn-lg">Visualization</a>
-                </div>
-            <!-- </div> -->
-                <!-- <div class="col-md-4 col-sm-6 display_in"> -->
-                    <!-- <div class="serviceBox">
-                        <h3 class="title">Lock Variable</h3>
-                        <p class="description">
-                            Two values of lock can be possible, either 0 or 1. 
-                            Lock value 0 means that the critical section is vacant while the lock value 1 means that it is occupied. 
-                            A process which wants to get into the critical section first checks the value of the lock variable.
-                        </p>
-                        <a href="LockVariable/LockVariable.html" class="btn btn-primary btn-lg">Visualization</a>
-                    </div> -->
-                <!-- </div> -->
-         
-                <!-- <div class="col-md-4 col-sm-6 display_in"> -->
-                    <div class="serviceBox">
-                        <h3 class="title">Binary Semaphore</h3>
-                        <p class="description">
-                            A binary semaphore is restricted to values of zero or one, while a counting semaphore can assume any nonnegative integer value.
-                            A binary semaphore can be used to control access to a single resource. 
-                            In particular, it can be used to enforce mutual exclusion for a critical section in user code.
-                        </p>
-                        <a href="BinarySemaphore/BinarySemaphore.html" class="btn btn-primary btn-lg">Visualization</a>
-                    </div>
-                <!-- </div> -->
-        <!-- </div> -->
-</body>
+    <div class="serviceBox">
+      <h3 class="title">Counting Semaphore</h3>
+      <p class="description">
+        Conceptually, a semaphore is a nonnegative integer count. Semaphores are
+        typically used to coordinate access to resources, with the semaphore
+        count initialized to the number of free resources. By default, there is
+        no defined order of unblocking if multiple threads are waiting for a
+        semaphore
+      </p>
+      <a
+        href="CountingSemaphore/CountingSemaphore.html"
+        class="btn btn-primary btn-lg"
+        >Visualization</a
+      >
+    </div>
+    <div class="serviceBox">
+      <h3 class="title">Lock Variable</h3>
+      <p class="description">
+        Two values of lock can be possible, either 0 or 1. Lock value 0 means
+        that the critical section is vacant while the lock value 1 means that it
+        is occupied. A process which wants to get into the critical section
+        first checks the value of the lock variable.
+      </p>
+      <a href="LockVariable/LockVariable.html" class="btn btn-primary btn-lg"
+        >Visualization</a
+      >
+    </div>
+    <div class="serviceBox">
+      <h3 class="title">Binary Semaphore</h3>
+      <p class="description">
+        A binary semaphore is restricted to values of zero or one, while a
+        counting semaphore can assume any nonnegative integer value. A binary
+        semaphore can be used to control access to a single resource. In
+        particular, it can be used to enforce mutual exclusion for a critical
+        section in user code.
+      </p>
+      <a
+        href="BinarySemaphore/BinarySemaphore.html"
+        class="btn btn-primary btn-lg"
+        >Visualization</a
+      >
+    </div>
+    <div class="serviceBox">
+      <h3 class="title">MuteX</h3>
+      <p class="description">
+        Mutex is a mutual exclusion object that synchronizes access to a
+        resource. It is created with a unique name at the start of a program.
+        The Mutex is a locking mechanism that makes sure only one thread can
+        acquire the Mutex at a time and enter the critical section.
+      </p>
+      <a href="Mutex/mutex.html" class="btn btn-primary btn-lg"
+        >Visualization</a
+      >
+    </div>
+    <div class="serviceBox">
+      <h3 class="title">Producer And Consumer</h3>
+      <p class="description">
+        The producer consumer problem is a synchronization problem. There is a
+        fixed size buffer and the producer produces items and enters them into
+        the buffer. The consumer removes the items from the buffer and consumes
+        them.
+      </p>
+      <a
+        href="ProducerConsumer/ProducerConsumer.html"
+        class="btn btn-primary btn-lg"
+        >Visualization</a
+      >
+    </div>
+  </body>
 </html>
