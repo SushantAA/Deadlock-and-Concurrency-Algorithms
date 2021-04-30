@@ -99,7 +99,7 @@ body
   
   .btn-preset {
     text-decoration: none;
-    color: #aa1446;
+    color: #16eb68;
   }
   
   td{
@@ -125,8 +125,8 @@ body
     text-align: center;
     cursor: pointer;
     outline: none;
-    color: #fff;
-    background-color: #aa1446;
+    color: #000000;
+    background-color: greenyellow;
     border: none;
     border-radius: 10px;
     /* box-shadow: 0 9px #999; */
