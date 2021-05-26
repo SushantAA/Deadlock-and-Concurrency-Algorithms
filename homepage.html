@@ -27,46 +27,60 @@
   <body>
     <!-- <div class="container"> -->
       <h1 class="display-2" id="main_heading">Deadlock And Concurrency Algorithms</h1>
-    <!-- </div> -->
-    <div class="serviceBox">
-      <h3 class="title">Counting Semaphore</h3>
-      <p class="description">
-        Conceptually, a semaphore is a nonnegative integer count. Semaphores are
-        typically used to coordinate access to resources, with the semaphore
-        count initialized to the number of free resources. By default, there is
-        no defined order of unblocking if multiple threads are waiting for a
-        semaphore
-      </p>
-      <a
+      <!-- </div> -->
+      <div class="serviceBox">
+        <h3 class="title">Binary Semaphore</h3>
+        <p class="description">
+          A binary semaphore is restricted to values of zero or one, while a
+          counting semaphore can assume any nonnegative integer value. A binary
+          semaphore can be used to control access to a single resource. In
+          particular, it can be used to enforce mutual exclusion for a critical
+          section in user code.
+        </p>
+        <a
+          href="BinarySemaphore/BinarySemaphore.html"
+          class="btn btn-primary btn-lg"
+          >Visualization</a
+        >
+      </div>
+      <div class="serviceBox">
+        <h3 class="title">Producer And Consumer</h3>
+        <p class="description">
+          The producer consumer problem is a synchronization problem. There is a
+          fixed size buffer and the producer produces items and enters them into
+          the buffer. The consumer removes the items from the buffer and consumes
+          them.
+        </p>
+        <a
+        href="ProducerConsumer/ProducerConsumer.html"
+        class="btn btn-primary btn-lg"
+        >Visualization</a
+        >
+      </div>
+      <div class="serviceBox">
+        <h3 class="title">Counting Semaphore</h3>
+        <p class="description">
+          Conceptually, a semaphore is a nonnegative integer count. Semaphores are
+          typically used to coordinate access to resources, with the semaphore
+          count initialized to the number of free resources. By default, there is
+          no defined order of unblocking if multiple threads are waiting for a
+          semaphore
+        </p>
+        <a
         href="CountingSemaphore/CountingSemaphore.html"
         class="btn btn-primary btn-lg"
         >Visualization</a
-      >
-    </div>
-    <div class="serviceBox">
-      <h3 class="title">Lock Variable</h3>
-      <p class="description">
-        Two values of lock can be possible, either 0 or 1. Lock value 0 means
+        >
+      </div>
+      <div class="serviceBox">
+        <h3 class="title">Lock Variable</h3>
+        <p class="description">
+          Two values of lock can be possible, either 0 or 1. Lock value 0 means
         that the critical section is vacant while the lock value 1 means that it
         is occupied. A process which wants to get into the critical section
         first checks the value of the lock variable.
       </p>
       <a href="LockVariable/LockVariable.html" class="btn btn-primary btn-lg"
-        >Visualization</a
-      >
-    </div>
-    <div class="serviceBox">
-      <h3 class="title">Binary Semaphore</h3>
-      <p class="description">
-        A binary semaphore is restricted to values of zero or one, while a
-        counting semaphore can assume any nonnegative integer value. A binary
-        semaphore can be used to control access to a single resource. In
-        particular, it can be used to enforce mutual exclusion for a critical
-        section in user code.
-      </p>
-      <a
-        href="BinarySemaphore/BinarySemaphore.html"
-        class="btn btn-primary btn-lg"
         >Visualization</a
       >
     </div>
@@ -79,20 +93,6 @@
         acquire the Mutex at a time and enter the critical section.
       </p>
       <a href="Mutex/mutex.html" class="btn btn-primary btn-lg"
-        >Visualization</a
-      >
-    </div>
-    <div class="serviceBox">
-      <h3 class="title">Producer And Consumer</h3>
-      <p class="description">
-        The producer consumer problem is a synchronization problem. There is a
-        fixed size buffer and the producer produces items and enters them into
-        the buffer. The consumer removes the items from the buffer and consumes
-        them.
-      </p>
-      <a
-        href="ProducerConsumer/ProducerConsumer.html"
-        class="btn btn-primary btn-lg"
         >Visualization</a
       >
     </div>

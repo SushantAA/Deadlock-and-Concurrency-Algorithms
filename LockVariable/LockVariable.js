@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', ()=>
     }
 
     let atCriticalSection = false
-    let mutex = 1
+    let mutex = 0
     let slist = document.querySelector('#slist')
     let lst = document.querySelectorAll('.process')
     let prop = {}
@@ -29,13 +29,23 @@ document.addEventListener('DOMContentLoaded', ()=>
             e.style.animationPlayState = "running"
             e.addEventListener('webkitAnimationEnd', ()=>
             {
-                document.querySelector('#val').innerHTML = 1
+                document.querySelector('#val').innerHTML = 0;
+                
+                // if (mutex < 0) 
+                // {
+                //     document.querySelector('#val').innerHTML = 1
+                // }
+                // else 
+                // {
+                //     document.querySelector('#val').innerHTML = 0
+                // }
+                
                 let li = document.createElement('li')
                 li.innerHTML = `Process ${e.id} -> Completed`
                 slist.appendChild(li)
                 setTimeout(()=>
                 { 
-                    mutex = 1 
+                    mutex = 0 
                 }, 1000)
                 document.querySelector('#critical').style.backgroundColor = "rgb(39, 46, 46)"
             })
@@ -48,10 +58,14 @@ document.addEventListener('DOMContentLoaded', ()=>
 
             let a = setInterval(()=>
             {
-                if(atCriticalSection && (mutex == 1 | mutex == 0) )
+                if(atCriticalSection && ( mutex == 0) )
                 {
                     e.style.animationPlayState = "running"
-                    mutex = mutex - 1
+                    // mutex = 1;
+                    // if(mutex)   mutex = 0;
+                    // else        mutex = 1;
+                    mutex = 1 ;
+
                     if (mutex > 0) 
                     {
                         document.querySelector('#val').innerHTML = 1
